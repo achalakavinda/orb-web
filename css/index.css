@@ -1,0 +1,287 @@
+p{
+    color: rgba(0,0,0,0.7)
+}
+.banner-content{
+    position: relative;
+    width: 100%;
+    text-align: right;  
+}
+.banner-content >h1{
+    font-size: 400%;
+    margin-top: -100px;
+    padding: 10px;
+}
+
+.about-area{
+   padding-top: 250px;
+   padding-bottom: 150px;
+   overflow: hidden;
+    min-height: 100vh;
+}
+
+.about-detail-header{
+    padding: 10px;
+}
+.about-detail-header>.title{
+     font-size: 300%;
+    line-height: normal;
+    font-weight: 600;
+    transition: all ease 1s;
+}
+.service-area{
+   position: relative;
+   
+   background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+
+.service-area >.container{
+    padding-top: 150px;
+   padding-bottom: 150px;
+}
+
+#partical{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.service-header{
+    text-align: center;
+    padding: 5px;
+   
+}
+
+.service-area:hover .service-header > .title{
+    color: white;
+    font-size: 320%;
+    transition: all ease 0.5s;
+}
+.service-header > .title{
+    font-size: 300%;
+    font-weight: 600;
+    color: rgba(255,255,255,0.8);
+    transition: all ease 1s;
+    line-height: normal;
+}
+
+.service-header >  .description{
+   color: rgba(255,255,255,0.8);
+    line-height: normal;
+}
+
+.card-container{
+    width: 100%;
+    padding-top: 20px;
+}
+
+.card-container >.col-md-4{
+    padding: 10px;
+}
+
+.card-container .card{
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    margin-top: 10px;
+    box-shadow: 1.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+    transition: all ease 1s;
+}
+
+.card-container .card:hover{
+    box-shadow: 1.213px 21.213px 30px 0px rgba(0, 0, 0, 0.3);
+    transition: all ease 1s;
+    margin-top: 5px;
+}
+
+.card-container .card:hover >.card-head >i{
+     color: purple;
+    transition: all ease 2s;
+}
+
+.card-container .card>.card-head {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 200%;
+    height: 150px;
+}
+
+.card-container .card>.card-head >i{
+    color: rgba(0,0,0,0.4);
+    transition: all ease 2s;
+}
+.card-container .card> .card-title{
+    font-family: "Poppins", sans-serif;;
+    text-align: center;
+     padding-top:18px;
+    font-size: 200%;
+    color: rgba(0,0,0,0.6);
+}
+.card-container .card> .card-body{
+    padding:5px 20px 10px 20px;
+    text-align: center;
+    color: rgba(0,0,0,0.6);
+     font-size: 120%;
+}
+
+.price-area{
+   min-height: 100vh;
+   padding-top: 150px;
+   padding-bottom: 150px;
+}
+.price-area .price-header{
+    text-align: center;
+}
+
+.price-area .price-header>.title{
+    font-size: 300%;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.price-card-container{
+    padding-top: 70px;
+}
+.price-area .price-header>.description{
+    line-height: normal;
+}
+
+.price-card{
+   position: relative;
+    width: 100%;
+    min-height: 500px;
+    margin-top: 10px;
+    box-shadow: 1.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
+     transition: all ease 1s;
+}
+
+.price-card-head{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    padding-top: 30px;
+    background-color: rebeccapurple;
+   transition: all ease 1s;
+}
+.price-card-head >.pg-name{
+    padding-left: 20px;
+    font-size: 100%;
+     color: rgba(255,255,255,0.9);
+}
+.price-card-head >.pg-name>span{
+    font-size: 200%;
+    font-weight: 600;
+}
+.price-card-head >.pg-price{
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 200%;
+    font-weight: 700;
+     color: rgba(255,255,255,0.9);
+}
+
+.price-card-body{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.price-card-body >ul{
+    padding-left: 20px;
+}
+
+.price-card-body >ul>li{
+    color: rgba(0,0,0,0.6);
+    font-weight: 600;
+    font-size: 120%;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+
+.price-card:hover{
+    margin-top: 5px;
+     transition: all ease 1s;
+     box-shadow: 1.213px 21.213px 30px 0px rgba(0, 0, 0, 0.3);
+}
+
+.price-card:hover>.price-card-head{
+    background-color: rgba(255, 56, 56,1.0);
+    transition: all ease 1s;
+} 
+
+.contact-area{
+   min-height: 100vh;
+   padding-top: 200px;
+   padding-bottom: 150px;
+}
+
+.contact-description-container{
+    
+}
+
+.c-d-c-header{
+    color: rgba(0,0,0,0.8);
+}
+
+.contact-title-sm{
+    font-weight: 600;
+    font-size: 120%;
+    color: rgba(0,0,0,0.5);
+}
+.contact-title-lg{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 250%;
+    color: rgba(0,0,0,0.5);
+}
+
+.contact-desc-body{
+    margin-top: 20px;
+    color: rgba(0,0,0,0.6);
+}
+
+
+.contact-form {
+	padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact-form input[type='text'],
+.contact-form input[type='email'],
+.contact-form textarea {
+	width: 100%;
+	background: none;
+	border:  none;
+	border-bottom: 1px  solid rgba(0,0,0,0.6);
+	color:  rgba(0,0,0,0.6);
+	font-size: 14px;
+	padding: 5px 0 20px;
+	margin-bottom: 20px;
+}
+
+.contact-form textarea {
+	height: 130px;
+	padding-bottom: 10px;
+	margin-bottom: 35px;
+}
+
+.contact-form ::-webkit-input-placeholder {
+	font-style: italic;
+	color:  color: rgba(0,0,0,0.6);
+}
+
+.contact-form :-ms-input-placeholder {
+	font-style: italic;
+	color:  color: rgba(0,0,0,0.6);
+}
+
+.contact-form ::-ms-input-placeholder {
+	font-style: italic;
+	color:  color: rgba(0,0,0,0.6);
+}
+
+.contact-form ::placeholder {
+	font-style: italic;
+	color:  color: rgba(0,0,0,0.6);
+}
