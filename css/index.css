@@ -2,8 +2,9 @@ p{
     color: rgba(0,0,0,0.7)
 }
 .banner-content{
-    position: relative;
-    width: 100%;
+    position: absolute;
+    bottom: 100px;
+    right: 20px;
     text-align: right;  
 }
 .banner-content >h1{
@@ -284,4 +285,10 @@ p{
 .contact-form ::placeholder {
 	font-style: italic;
 	color:  color: rgba(0,0,0,0.6);
+}
+
+
+#grad1{
+/*    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);*/
+    background-image: url(../images/bg2.jpg);
 }

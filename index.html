@@ -8,7 +8,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">     
+     
       
     <link rel="stylesheet" href="css/animate.css">  
     <link rel="stylesheet" href="css/main.css">  
@@ -43,15 +44,15 @@
       
          	<!-- start banner Area -->
 			<section class="banner-area relative" id="home" data-parallax="scroll">
-				<div class="overlay-bg overlay">
-                    <div id="partical" ></div>
+				<div id="grad1" class="overlay-bg overlay">
+                    <canvas id="canvas"></canvas>                    
                 </div>
 				<div class="container">
 					<div class="row fullscreen  d-flex align-items-center justify-content-end">
 						<div class="banner-content">
-							<h1 class="wow slideInLeft" data-wow-duration="2s">
-                                <span class="thin-text">We are a tech startup company</span>
-                                <span class="blod-text"> and</span> <br/><span class="thin-text"> we strive to grow everyday		</span>			
+							<h1 style="background: rgba(0,0,0,0.4); padding-top: 20px; padding-bottom: 20px" class="wow slideInLeft" data-wow-duration="2s">
+                                <span class="thin-text">Orb Platform </span>
+                                <span class="blod-text"> </span> <br/><span class="thin-text">  Deploy you're code and expose		</span>			
 							</h1>
 						</div>												
 					</div>
@@ -347,6 +348,8 @@
     <script src="js/wow.js"></script>
       <script src="js/particles.js"></script>
       
+       <script src="js/solar.js" type="text/javascript">
+      
       
     <script>
       $("#home").backstretch("images/header-bg.jpg");
@@ -379,7 +382,7 @@
                   }
                 },
                 "color": {
-                  "value": "#ffffff"
+                  "value": "#FFFFFF"
                 },
                 "shape": {
                   "type": "circle",
@@ -392,12 +395,12 @@
                   },
                 },
                 "opacity": {
-                  "value": 0.5,
+                  "value": 0.8,
                   "random": false,
                   "anim": {
                     "enable": false,
                     "speed": 1,
-                    "opacity_min": 0.1,
+                    "opacity_min": 0.8,
                     "sync": false
                   }
                 },
