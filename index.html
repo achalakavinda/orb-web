@@ -15,32 +15,69 @@
     <link rel="stylesheet" href="css/main.css">  
     <link rel="stylesheet" href="css/index.css">  
     <link rel="stylesheet" href="css/bird.css">  
+    <link rel="stylesheet" href="css/fullmenu.css">  
+    <link rel="stylesheet" href="css/calculator.css">  
 
     <title>Orb | DFASS</title>
+      
+      <style>
+      
+          .full-open header{
+                position: fixed;
+            }
+
+            header{
+                padding: 30px;
+                width: 100%;
+                position: absolute;
+                z-index: 5;
+            }
+          
+          
+      </style>
+      
   </head>
   <body>
       
-      <!-- Start Header Area -->
-			<header class="default-header">
-				<nav class="navbar navbar-expand-lg  navbar-light">
-					<div class="container">
-						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						    <span class="navbar-toggler-icon"></span>
-						  </button>
-
-						  <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
-						    <ul class="navbar-nav">
-								<li><a href="#home">Home</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#service">Service</a></li>
-								<li><a href="#price">Price</a></li>
-								<li><a href="#contact">Contact</a></li>
-						    </ul>
-						  </div>						
-					</div>
-				</nav>
-			</header>
-			<!-- End Header Area -->
+      <header>
+        <img src="images/logo.png" alt="">
+        <div class="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+            <!-- full menu Area -->
+	
+                  <div class="full-menu">
+                        <div class="full-inner row">
+                            <nav class="col-md-8">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="news.html">News</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                            <div class="col-md-4 full-contact">
+                                <ul>
+                                    <li class="title">Get in Touch</li>
+                                    <li>hi@gorge.com</li>
+                                    <li>
+                                        <div class="social">
+                                            <a href="#"><i class="fab fa-facebook"></i>  </a>
+                                            <a href="#"><i class="fab fa-twitter" aria-hidden="true"></i>  </a>
+                                            <a href="#"><i class="fab fa-instagram" aria-hidden="true"></i>  </a>
+                                            <a href="#"><i class="fab fa-behance" aria-hidden="true"></i>  </a>
+                                            <a href="#"><i class="fab fa-dribbble" aria-hidden="true"></i>  </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+      
+			<!-- end full menu Area -->
       
          	<!-- start banner Area -->
 			<section class="banner-area relative" id="home" data-parallax="scroll">
@@ -106,6 +143,140 @@
           
       </section>
       <!-- End about area -->
+      
+      
+      <!-- -->
+      
+      
+      <section id="one">
+          <div id="chartContainer" style="height: 500px; width:500px"></div>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+          <div class="container">
+          
+              
+              <div class="row">
+				<span><h4>Calculating cost for AWS Lambda, Azure Functions, Google Cloud Functions, and IBM OpenWhisk</h4></span>
+				<div class="7u 12u$(small)">
+					<form method="post" action="#">
+						<div class="row uniform 50%">
+							<div class="12u$">
+								<input type="number" name="number-executions" id="number-executions" placeholder="Number of Executions">
+							</div>
+							<div class="12u$">
+								<input type="number" name="executed-estimation-time" id="executed-estimation-time" placeholder="Estimated Execution Time (ms)">
+							</div>
+							<div class="12u$">
+								<select name="memory" id="memory">
+									<option value="128">128MB</option>
+									<option value="192">192MB</option>
+									<option value="256">256MB</option>
+									<option value="320">320MB</option>
+									<option value="384">384MB</option>
+									<option value="448">448MB</option>
+									<option value="512">512MB</option>
+									<option value="576">576MB</option>
+									<option value="640">640MB</option>
+									<option value="704">704MB</option>
+									<option value="768">768MB</option>
+									<option value="832">832MB</option>
+									<option value="896">896MB</option>
+									<option value="960">960MB</option>
+									<option value="1024">1024MB</option>
+									<option value="1088">1088MB</option>
+									<option value="1152">1152MB</option>
+									<option value="1216">1216MB</option>
+									<option value="1280">1280MB</option>
+									<option value="1344">1344MB</option>
+									<option value="1408">1408MB</option>
+									<option value="1472">1472MB</option>
+									<option value="1536">1536MB</option>
+								</select>
+							</div>
+							<div class="12u$">
+								<input type="radio" name="freetier" value="true" checked=""> <span class="label">True</span>
+								<input type="radio" name="freetier" value="false"> <span class="label">False</span>
+							</div>
+							<div class="12u$">
+								<input type="radio" name="http" value="true"> <span class="label">True</span>
+								<input type="radio" name="http" value="false" checked=""> <span class="label">False</span>
+							</div>							
+						</div>
+					</form>
+				</div>
+				<div class="5u$ 12u$(small)">
+					<ul class="labeled-icons">
+						<li>
+							<h3 class="icon fa-cloud"><span class="label">Number of Executions</span></h3>
+							<a href="#">Number of Executions</a>
+						</li>
+						<li>
+							<h3 class="icon fa-code"><span class="label">Estimated Execution Time (ms)</span></h3>
+							<a href="#">Estimated Execution Time (ms)</a>
+						</li>
+						<li>
+							<h3 class="icon fa-cogs"><span class="label">Memory Size</span></h3>
+							<a href="#">Memory Size</a>
+						</li>
+						<li>
+							<h3 class="icon fa-check-circle-o"><span class="label">Memory Size</span></h3>
+							<a href="#">Include Free-Tier</a>
+						</li>
+						<li>
+							<h3 class="icon fa-globe"><span class="label">Request Type</span></h3>
+							<a href="#">HTTP Requests</a>
+						</li>						
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<table>
+				<tbody><tr>
+					<th>Vendor</th>
+					<th>Request Cost</th>
+					<th>Compute Cost</th>
+					<th>Total</th>
+				</tr>
+				<tr>
+					<td>AWS Lambda</td>
+					<td>$<span id="lambda-request-cost">-</span></td>
+					<td>$<span id="lambda-execution-cost">-</span></td>
+					<th>$<span id="lambda-total-cost">-</span>
+				</th></tr>
+				<tr>
+					<td>Azure Functions</td>
+					<td>$<span id="azure-request-cost">-</span></td>
+					<td>$<span id="azure-execution-cost">-</span></td>
+					<th>$<span id="azure-total-cost">-</span>
+				</th></tr>
+				<tr>
+					<td>Google Cloud Functions</td>
+					<td>$<span id="google-request-cost">-</span></td>
+					<td>$<span id="google-execution-cost">-</span></td>
+					<th>$<span id="google-total-cost">-</span>
+				</th></tr>
+				<tr>
+					<td>IBM OpenWhisk</td>
+					<td>$<span id="ibm-request-cost">-</span></td>
+					<td>$<span id="ibm-execution-cost">-</span></td>
+					<th>$<span id="ibm-total-cost">-</span></th>
+                    </tr>
+                    
+                <tr>
+					<td>ORB Platform</td>
+					<td>$<span id="orb-request-cost">-</span></td>
+					<td>$<span id="orb-execution-cost">-</span></td>
+					<th>$<span id="orb-total-cost">-</span></th>
+                    </tr>    
+                    
+                    
+			</tbody></table>
+          
+          
+          </div>
+		</section>
+      
+      
+      <!-- -->
       
       
       <!-- start service area -->
@@ -338,7 +509,8 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="http://serverlesscalc.com/assets/js/jquery.min.js" ></script>
+      
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/backstretch.js" type="text/javascript"></script>
@@ -348,7 +520,48 @@
     <script src="js/wow.js"></script>
       <script src="js/particles.js"></script>
       
-       <script src="js/solar.js" type="text/javascript">
+      <script src="js/solar.js" type="text/javascript"></script>
+      <script src="http://serverlesscalc.com/assets/js/jquery.poptrox.min.js" type="text/javascript"></script>
+      <script src="http://serverlesscalc.com/assets/js/util.js" type="text/javascript"></script>
+      <script src="js/skel.min.js" type="text/javascript"></script>
+      <script src="js/placeholder.js" type="text/javascript"></script>
+      
+      <script>
+          
+          var chart = null;
+          
+          $(document).ready(function(){
+            chart = new CanvasJS.Chart("chartContainer", {
+            animationEnabled: true,
+            title: {
+                text: "Hukaaaa !!!!!!"
+            },
+            data: [{
+                type: "pie",
+                startAngle: 240,
+                yValueFormatString: "##0.00\"%\"",
+                indexLabel: "{label} {y}",
+                dataPoints: [
+                    {y: 79.45, label: "Aws Lambda"},
+                    {y: 7.31, label: "Azure"},
+                    {y: 7.06, label: "Google Cloud"},
+                    {y: 4.91, label: "IBM OpenWhisk"},
+                    {y: 1.26, label: "Orb"}
+                ]
+            }]
+        });
+        chart.render();
+
+              
+          });
+      
+       
+          
+      </script>
+      
+          <script src="js/calculate.js"></script>  
+
+      
       
       
     <script>
