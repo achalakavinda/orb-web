@@ -1,0 +1,249 @@
+.banner-area{
+    height: 100vh;
+    overflow: hidden;
+}
+p{
+    color: rgba(0,0,0,0.7)
+}
+
+.banner-content{
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    text-align: left;  
+}
+.banner-content >h1{
+    font-size: 270%;
+    margin-bottom: 20px;
+    background-color: rgba(0,0,0,0.4);
+    padding: 20px;
+    padding-right: 100px;
+}
+
+.button3 {
+  position: relative;
+  color: white;
+  font-size: 150%;    
+  background: linear-gradient(to right, #8041F2, #3095ED);
+  padding: 10px 20px 10px 20px;    
+  transition: .2s ease-in-out;    
+}
+
+.button3:hover {
+  background-color: black;
+    color: white;
+}
+
+
+#grad1{
+/*    background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);*/
+    background-image: url(../images/bg2.jpg);
+}
+
+.about-area{
+   padding-top: 200px;    
+   padding-bottom: 150px;    
+   overflow: hidden;
+    
+}
+
+.about-detail-header{
+    padding: 10px;  
+}
+
+.about-detail-header:hover .description{
+    padding-left: 5px;
+    transition: all ease 1s;
+}
+
+.about-detail-header>.title{
+   font-size: 300%;
+    line-height: normal;
+    font-weight: 600;
+    transition: all ease 1s;
+    color: white;
+}
+.about-detail-header>.description{
+     color: white;
+    transition: all ease 1s;
+}
+
+
+.service-header{
+    text-align: center;
+    padding: 5px;
+   
+}
+
+.service-area:hover .service-header > .title{
+    color: white;
+    font-size: 320%;
+    transition: all ease 0.5s;
+}
+.service-header > .title{
+    font-size: 300%;
+    font-weight: 600;
+    color: rgba(255,255,255,0.8);
+    transition: all ease 1s;
+    line-height: normal;
+}
+
+.service-header >  .description{
+   color: rgba(255,255,255,0.8);
+    line-height: normal;
+}
+
+.card-container{
+    width: 100%;
+    padding: 0px;
+}
+
+.card-container >.col-md-4{
+    
+}
+
+.card-container .card{
+    position: relative;
+    width: 100%;
+    min-height:75vh;
+    margin-top: 10px;
+    transition: all ease 1s;
+    background-color:rgba(0,0,0,0.3);
+    transition: all ease 1s;
+}
+
+.card-container .card:hover{
+    box-shadow: 1.213px 21.213px 30px 0px rgba(0, 0, 0, 0.3);
+    transition: all ease 1s;
+    margin-top: 5px;    
+    background-image: url(../images/bg2.jpg);
+    
+}
+
+.card-container .card:hover >.card-head >i{
+     font-size:350%;
+    transition: all ease 2s;
+}
+
+.card-container .card>.card-head {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 200%;
+    height: 150px;
+}
+
+.card-container .card>.card-head >i{
+    color: rgba(0,0,0,0.4);
+    transition: all ease 2s;    
+     color: white;
+}
+.card-container .card> .card-title{
+    font-family: "Poppins", sans-serif;;
+    text-align: center;
+    padding-top:18px;
+    font-size: 200%;
+    color: white;
+}
+.card-container .card> .card-body{
+    padding:5px 20px 10px 20px;
+    text-align: center;
+    color: rgba(0,0,0,0.6);
+     font-size: 120%;
+     color: white;
+}
+
+.pricing-area{
+   min-height: 100vh; 
+   background-color: rebeccapurple;
+}
+
+#partical{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.stylcontainer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact-area{
+   min-height: 100vh;
+   padding-bottom: 150px;
+    
+}
+
+.contact-area >.container{
+    padding-top: 200px;
+}
+.contact-description-container{
+    
+}
+
+.c-d-c-header{
+    color: rgba(0,0,0,0.8);
+}
+
+.contact-title-sm{
+    font-weight: 600;
+    font-size: 120%;
+    color: rgba(0,0,0,0.5);
+}
+.contact-title-lg{
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 250%;
+    color: rgba(0,0,0,0.5);
+}
+
+.contact-desc-body{
+    margin-top: 20px;
+    color: rgba(0,0,0,0.6);
+}
+
+
+.contact-form {
+	padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contact-form input[type='text'],
+.contact-form input[type='email'],
+.contact-form textarea {
+	width: 100%;
+	background: none;
+	border:  none;
+	border-bottom: 1px  solid rgba(0,0,0,0.6);
+	color:  rgba(0,0,0,0.6);
+	font-size: 14px;
+	padding: 5px 0 20px;
+	margin-bottom: 20px;
+}
+
+.contact-form textarea {
+	height: 130px;
+	padding-bottom: 10px;
+	margin-bottom: 35px;
+}
+
+.contact-form ::-webkit-input-placeholder {
+	font-style: italic;
+	color:  color: rgba(0,0,0,0.6);
+}
+
+.contact-form :-ms-input-placeholder {
+	font-style: italic;
+	color:  color: rgba(0,0,0,0.6);
+}
+
+.contact-form ::-ms-input-placeholder {
+	font-style: italic;
+	color:  color: rgba(0,0,0,0.6);
+}
+
+.contact-form ::placeholder {
+	font-style: italic;
+	color:  color: rgba(0,0,0,0.6);
+}
