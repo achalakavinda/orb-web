@@ -276,28 +276,34 @@
 				Update();
 			});			
         
-        function updatePie(){            
+        function updatePie(){   
             
-             chart = new CanvasJS.Chart("chartContainer", {
-            animationEnabled: true,
-            title: {
-                text: "Hukaaaa !!!!!!"
-            },
-            data: [{
-                type: "pie",
-                startAngle: 240,
-                yValueFormatString: "##0.00\"%\"",
-                indexLabel: "{label} {y}",
-                dataPoints: [
-                    {y: 20, label: "Aws Lambda"},
-                    {y: 10, label: "Azure"},
-                    {y: 20, label: "Google Cloud"},
-                    {y: 30, label: "IBM OpenWhisk"},
-                    {y: 20, label: "Orb"}
-                ]
-            }]
+            chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                title: {
+                    text: "Cost Comparison",
+                    fontSize: 20,
+                     fontColor: "white",
+                },
+                backgroundColor:null,
+                data: [{
+                    type: "pie",
+                    startAngle: 240,
+                    yValueFormatString: "##0.00\"%\"",
+                    indexLabel: "{label} {y}",
+                    indexLabelFontColor: "white",
+                    dataPoints: [
+                        {y: 25, label: "Lambda"},
+                        {y: 25, label: "Azure"},
+                        {y: 30, label: "G Cloud"},
+                        {y: 20, label: "IBM"},
+                        {y: 10, label: "Orb"}
+                    ]
+                }]
         });
+        
         chart.render();
+            
         }
         
 	});

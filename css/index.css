@@ -153,8 +153,9 @@ p{
 }
 
 .pricing-area{
-   min-height: 100vh; 
+   position: relative;
    background-color: rebeccapurple;
+   padding-bottom: 100px;    
 }
 
 #partical{
@@ -166,8 +167,17 @@ p{
 .stylcontainer{
     padding-top: 50px;
     padding-bottom: 50px;
+    background-color: rgba(0,0,0,0.5);
 }
 
+.team-area {
+    min-height: 100vh;
+}
+
+
+.team-area> .hex{
+    margin-top: 0px;
+}
 .contact-area{
    min-height: 100vh;
    padding-bottom: 150px;

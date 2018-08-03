@@ -18,6 +18,7 @@
     <link href="css/bird.css" rel="stylesheet">  
       
       <link rel="stylesheet" href="css/calculator.css"> 
+      <link rel="stylesheet" href="css/team.css"> 
       
 
     <title>The ORB | Distributed Function As Service</title>
@@ -170,6 +171,8 @@
       <section class="pricing-area relative" id="price" data-parallax="scroll">
           <div id="partical" ></div>
           
+          <br/><br/><br/><br/>
+          
             <div class=" stylcontainer container">
           
                 <span><h4>Calculating cost for AWS Lambda, Azure Functions, Google Cloud Functions, IBM OpenWhisk and Orb</h4></span>
@@ -178,21 +181,21 @@
                   
                   <div class="col-md-4">
                             <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
+                                    <label for="exampleInputEmail1">Number of Executions</label>
                                     <input  type="number" class="form-control" name="number-executions" id="number-executions" placeholder="Number of Executions">
                               </div>
                         </div>
                         
                         <div class="col-md-4">
                             <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
+                                    <label for="exampleInputEmail1">Estimated Execution Time (ms)</label>
                                     <input type="number" class="form-control" name="executed-estimation-time" id="executed-estimation-time" placeholder="Estimated Execution Time (ms)">
                               </div>
                         </div>
                   
                    <div class="col-md-4">
                             <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
+                                    <label for="exampleInputEmail1">Memory Size</label>
                                     <select class="form-control" name="memory" id="memory">
 									<option value="128">128MB</option>
 									<option value="192">192MB</option>
@@ -242,9 +245,18 @@
                         </div>           		
 			</div>
                 
+                <br/><br/>
+                <br/><br/>
+                
               <div class="row">
               
-                  <table class="table">
+                 <div style="min-height: 500px;" class="col-md-6">
+                     <div id="chartContainer" style="position: relative;height: 500px; width: 100%"></div>	
+                    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>                 
+                 </div>
+                  
+                 <div class="col-md-6">
+                     <table class="table">
 				<tbody>
                     <tr>
                         <th>Vendor</th>
@@ -288,7 +300,8 @@
                     
 			</tbody>
                 </table>
-              
+               
+                 </div>
               </div>    
           
           </div>
@@ -296,6 +309,66 @@
 				
       </section>
       <!-- End service area -->
+      
+      <section class="team-area realative" id="team" data-parallax="scroll">
+          
+      
+         <ul id="hexGrid">
+             
+                <li class="hex">
+                    <div class="hexIn">
+                      <a class="hexLink" href="#">
+                        <img src="https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg" alt="" />
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="hex">
+                    <div class="hexIn">
+                      <a class="hexLink" href="#">
+                        <img src="https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg" alt="" />
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="hex">
+                    <div class="hexIn">
+                      <a class="hexLink" href="#">
+                        <img src="https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg" alt="" />
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="hex">
+                    <div class="hexIn">
+                      <a class="hexLink" href="#">
+                        <img src="https://farm7.staticflickr.com/6217/6216951796_e50778255c.jpg" alt="" />
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                      </a>
+                    </div>
+                  </li>
+
+                  <li class="hex">
+                    <div class="hexIn">
+                      <a class="hexLink" href="#">
+                        <img src="https://farm7.staticflickr.com/6083/6055581292_d94c2d90e3.jpg" alt="" />
+                        <h1>This is a title</h1>
+                        <p>Some sample text about the article this hexagon leads to</p>
+                      </a>
+                    </div>
+                  </li>
+             
+        </ul>
+
+      
+      </section>
       
       
       
@@ -369,6 +442,18 @@
     
         $("#body").backstretch("images/bg2.jpg");
         $("#contact").backstretch("images/contact-back.jpg");
+        
+        var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                title: {
+                    text: "Cost Comparison",
+                    fontSize: 20,
+                     fontColor: "white",
+                },
+                backgroundColor:null
+        });
+        
+        chart.render();
         
            var scroll = new SmoothScroll('a[href*="#"]');
         var wow = new WOW(
