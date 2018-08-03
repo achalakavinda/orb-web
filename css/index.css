@@ -6,6 +6,10 @@ p{
     color: rgba(0,0,0,0.7)
 }
 
+.img{
+    padding-bottom: 10px;
+}
+
 .banner-content{
     position: absolute;
     bottom: 100px;
@@ -13,10 +17,10 @@ p{
     text-align: left;  
 }
 .banner-content >h1{
-    font-size: 270%;
+    font-size: 200%;
     margin-bottom: 20px;
     background-color: rgba(0,0,0,0.4);
-    padding: 20px;
+    padding: 30px;
     padding-right: 100px;
 }
 
