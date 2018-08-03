@@ -37,7 +37,7 @@
 						    <ul class="navbar-nav">
 								<li><a href="#home">Home</a></li>
 								<li><a href="#about">About</a></li>
-								<li><a href="#price">Price</a></li>
+								<li><a href="#price">Pricing</a></li>
 								<li><a href="#team">Team</a></li>
 								<li><a href="#contact">Contact</a></li>
 						    </ul>
@@ -173,7 +173,7 @@
           
           <br/><br/><br/><br/>
           
-            <div class=" stylcontainer container">
+            <div class="stylcontainer container">
           
                 <span><h4>Calculating cost for AWS Lambda, Azure Functions, Google Cloud Functions, IBM OpenWhisk and Orb</h4></span>
               
@@ -246,7 +246,6 @@
 			</div>
                 
                 <br/><br/>
-                <br/><br/>
                 
               <div class="row">
               
@@ -312,15 +311,33 @@
       
       <section class="team-area realative" id="team" data-parallax="scroll">
           
+          <div class="col-md-12">
+          
+              <div class="team-detail-header wow slideInLeft" data-wow-duration="1s">
+                   <p class="title">Our Team</p>
+                   <p class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised i.</p>
+               </div>
+          
+          </div>
+          
       
-         <ul id="hexGrid">
+         <ul id="hexGrid">             
+                <li class="hex">
+                    <div class="hexIn">
+                      <a class="hexLink" href="#">
+                        <img src="./images/lakmal.jpg" alt="" />
+                        <h1 style="color: white">Mr. Lakmal</h1>
+                        <p style="color: white">Program Coordinator-MSc Cyber Security Degree Program at SLIIT</p>
+                      </a>
+                    </div>
+                  </li>
              
                 <li class="hex">
                     <div class="hexIn">
                       <a class="hexLink" href="#">
-                        <img src="https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg" alt="" />
-                        <h1>This is a title</h1>
-                        <p>Some sample text about the article this hexagon leads to</p>
+                        <img src="./images/dinu.jpeg" alt="" />
+                        <h1 style="color: white">Dinushanka</h1>
+                        <p style="color: white">Under Graduate at SLIIT <br/>Software Engineer at Arimac Lanka with 2+ years industry experience</p>
                       </a>
                     </div>
                   </li>
@@ -328,9 +345,9 @@
                   <li class="hex">
                     <div class="hexIn">
                       <a class="hexLink" href="#">
-                        <img src="https://farm5.staticflickr.com/4144/5053682635_b348b24698.jpg" alt="" />
-                        <h1>This is a title</h1>
-                        <p>Some sample text about the article this hexagon leads to</p>
+                        <img src="./images/nimansa.jpeg" alt="" />
+                        <h1 style="color: white">Nimansa</h1>
+                        <p style="color: white">Under Graduate at SLIIT <br/>Intern at MIT</p>
                       </a>
                     </div>
                   </li>
@@ -338,9 +355,9 @@
                   <li class="hex">
                     <div class="hexIn">
                       <a class="hexLink" href="#">
-                        <img src="https://farm3.staticflickr.com/2827/10384422264_d9c7299146.jpg" alt="" />
-                        <h1>This is a title</h1>
-                        <p>Some sample text about the article this hexagon leads to</p>
+                        <img src="./images/sk.jpeg" alt="" />
+                        <h1 style="color: white">Nuwan</h1>
+                        <p style="color: white">Under Graduate at SLIIT <br/>Intern at Info</p>
                       </a>
                     </div>
                   </li>
@@ -348,19 +365,9 @@
                   <li class="hex">
                     <div class="hexIn">
                       <a class="hexLink" href="#">
-                        <img src="https://farm7.staticflickr.com/6217/6216951796_e50778255c.jpg" alt="" />
-                        <h1>This is a title</h1>
-                        <p>Some sample text about the article this hexagon leads to</p>
-                      </a>
-                    </div>
-                  </li>
-
-                  <li class="hex">
-                    <div class="hexIn">
-                      <a class="hexLink" href="#">
-                        <img src="https://farm7.staticflickr.com/6083/6055581292_d94c2d90e3.jpg" alt="" />
-                        <h1>This is a title</h1>
-                        <p>Some sample text about the article this hexagon leads to</p>
+                        <img src="./images/achala.jpeg" alt="" />
+                        <h1 style="color: white">Achala</h1>
+                        <p style="color: white">Under Graduate at SLIIT <br/>Intern at IFS</p>
                       </a>
                     </div>
                   </li>
@@ -449,8 +456,18 @@
                     text: "Cost Comparison",
                     fontSize: 20,
                      fontColor: "white",
-                },
-                backgroundColor:null
+                },            
+                backgroundColor:null,
+            data: [{
+                    type: "pie",
+                    startAngle: 240,
+                    yValueFormatString: "##0.00\"%\"",
+                    indexLabel: "{label} {y}",
+                    indexLabelFontColor: "white",
+                    dataPoints: [
+                        {y: 100, label: "initial"}
+                    ]
+            }]
         });
         
         chart.render();
