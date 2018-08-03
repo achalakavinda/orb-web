@@ -145,16 +145,21 @@
       <!-- End about area -->
       
       
-      <!-- -->
-      
-      
-      <section id="one">
-          <div id="chartContainer" style="height: 500px; width:500px"></div>
-        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+      <!-- start service area -->
+      <section class="service-area relative" id="service" data-parallax="scroll">
+          <div id="partical" ></div>
+          
+          <div class="container">
+          <div id="chartContainer" style="height: 700px; width:700px"></div>
+          <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+          </div>
+          
           <div class="container">
           
               
               <div class="row">
+                  
+                  
 				<span><h4>Calculating cost for AWS Lambda, Azure Functions, Google Cloud Functions, and IBM OpenWhisk</h4></span>
 				<div class="7u 12u$(small)">
 					<form method="post" action="#">
@@ -273,116 +278,7 @@
           
           
           </div>
-		</section>
-      
-      
-      <!-- -->
-      
-      
-      <!-- start service area -->
-      <section class="service-area relative" id="service" data-parallax="scroll">
-          <div id="partical" ></div>
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-                            <div class="service-header wow slideInLeft">
-                                <p class="title">Our Offered Services</p>
-                                <p class="description">Who are in extremely love with eco friendly system.</p>
-                            </div>
-                        </div>								
-					</div>
-                    
-                    <div class="card-container">
-                        <br/><br/>
-                        <div class="row">
-                        
-                            <div class="col-md-4 wow slideInLeft">
-                                <div class="card">
-                                    <div class="card-head">
-                                       <i class="fa fa-3x fa-mobile-alt"></i>
-                                    </div>
-                                    <div class="card-title">
-                                        Mobile 
-                                    </div>
-                                    <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, quam tincidunt venen atis ultrices.
-                                    </div>
-                                </div>
-                            </div>
-                            
-                               <div class="col-md-4 wow slideInLeft">
-                                <div class="card">
-                                    <div class="card-head">
-                                       <i class="fa fa-3x fa-desktop"></i>
-                                    </div>
-                                    <div class="card-title">
-                                        Software
-                                    </div>
-                                    <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, quam tincidunt venen atis ultrices.
-                                    </div>
-                                </div>
-                            </div>
-                            
-                               <div class="col-md-4 wow slideInLeft">
-                                <div class="card">
-                                    <div class="card-head">
-                                       <i class="fa fa-3x fa-globe"></i>
-                                    </div>
-                                    <div class="card-title">
-                                        Websites
-                                    </div>
-                                    <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, quam tincidunt venen atis ultrices.
-                                    </div>
-                                </div>
-                            </div>
-                            
-                               <div class="col-md-4 wow slideInLeft">
-                                <div class="card">
-                                    <div class="card-head">
-                                       <i class="fa fa-3x fa-search"></i>
-                                    </div>
-                                    <div class="card-title">
-                                       SEO
-                                    </div>
-                                    <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, quam tincidunt venen atis ultrices.
-                                    </div>
-                                </div>
-                            </div>
-                            
-                               <div class="col-md-4 wow slideInLeft">
-                                <div class="card">
-                                    <div class="card-head">
-                                       <i class="fa fa-3x fa-server"></i>
-                                    </div>
-                                    <div class="card-title">
-                                        Hosting
-                                    </div>
-                                    <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, quam tincidunt venen atis ultrices.
-                                    </div>
-                                </div>
-                            </div>
-                            
-                               <div class="col-md-4 wow slideInLeft">
-                                <div class="card">
-                                    <div class="card-head">
-                                       <i class="fa fa-3x fa-life-ring"></i>
-                                    </div>
-                                    <div class="card-title">
-                                        System Support
-                                    </div>
-                                    <div class="card-body">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, quam tincidunt venen atis ultrices.
-                                    </div>
-                                </div>
-                            </div>
-                         
-                        </div>
-                    </div>
-				</div>
+          
       </section>
       <!-- End service area -->
       
@@ -532,9 +428,10 @@
           
           $(document).ready(function(){
             chart = new CanvasJS.Chart("chartContainer", {
-            animationEnabled: true,
+            animationEnabled: true,                
+            backgroundColor: null,
             title: {
-                text: "Hukaaaa !!!!!!"
+                text: "Test !!!!!!"
             },
             data: [{
                 type: "pie",
@@ -542,10 +439,10 @@
                 yValueFormatString: "##0.00\"%\"",
                 indexLabel: "{label} {y}",
                 dataPoints: [
-                    {y: 79.45, label: "Aws Lambda"},
+                    {y: 79.45, label: "Aws"},
                     {y: 7.31, label: "Azure"},
-                    {y: 7.06, label: "Google Cloud"},
-                    {y: 4.91, label: "IBM OpenWhisk"},
+                    {y: 7.06, label: "Google"},
+                    {y: 4.91, label: "IBM"},
                     {y: 1.26, label: "Orb"}
                 ]
             }]
