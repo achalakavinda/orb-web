@@ -6,8 +6,8 @@
 	var lambdaFreeRequests = 1000000;
 	var lambdaHTTPCharge = 3.50;
      
-    var OrbChargeGBSecond = 0.00001667;
-	var OrbRequestCharge = 0;
+    var OrbChargeGBSecond = 0.000001;
+	var OrbRequestCharge = 0.1;
 	var OrbFreeTier = 400000;
 	var OrbFreeRequests = 1000000;
 	var OrbHTTPCharge = 0;
@@ -278,7 +278,38 @@
         
         function updatePie(){   
             
-            chart = new CanvasJS.Chart("chartContainer", {
+             let lamdaTol = parseFloat($('#lambda-total-cost').text());
+            
+             let OrbTol = parseFloat($('#orb-total-cost').text());
+            
+             let  googleTol = parseFloat($('#google-total-cost').text());
+            
+             let IbmTol = parseFloat($('#ibm-total-cost').text());
+            
+            let AzureTol =  parseFloat($('#azure-total-cost').text());
+            
+            let tol = lamdaTol + OrbTol + googleTol + IbmTol + AzureTol;
+            let ratio = tol;
+            
+            let pLamba = lamdaTol/tol;
+            let pOrb = OrbTol/tol;
+            let pGoogle = googleTol/tol;
+            let pIbm = IbmTol/tol;
+            let pAzure = AzureTol/tol;
+            
+            console.log({
+                'lamba':lamdaTol,
+                'orb':OrbTol,
+                'google':googleTol,
+                'Ibm':IbmTol,
+                'Azure':AzureTol,
+                'Tol':tol,
+                 'ratio':ratio
+            });
+            
+            if(tol>0){
+                
+                 chart = new CanvasJS.Chart("chartContainer", {
                 animationEnabled: true,
                 title: {
                     text: "Cost Comparison",
@@ -293,16 +324,44 @@
                     indexLabel: "{label} {y}",
                     indexLabelFontColor: "white",
                     dataPoints: [
-                        {y: 25, label: "Lambda"},
-                        {y: 25, label: "Azure"},
-                        {y: 30, label: "G Cloud"},
-                        {y: 20, label: "IBM"},
-                        {y: 10, label: "Orb"}
+                        {y: pLamba, label: "Lambda"},
+                        {y: pAzure, label: "Azure"},
+                        {y: pGoogle, label: "G Cloud"},
+                        {y: pIbm, label: "IBM"},
+                        {y: pOrb, label: "Orb"}
                     ]
                 }]
         });
         
         chart.render();
+                
+            }else{
+                
+                chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                title: {
+                    text: "Cost Comparison",
+                    fontSize: 20,
+                     fontColor: "white",
+                },            
+                backgroundColor:null,
+            data: [{
+                    type: "pie",
+                    startAngle: 240,
+                    yValueFormatString: "##0.00\"%\"",
+                    indexLabel: "{label} {y}",
+                    indexLabelFontColor: "white",
+                    dataPoints: [
+                        {y: 100, label: "initial"}
+                    ]
+            }]
+        });
+        
+        chart.render();
+                
+            }
+            
+           
             
         }
         

@@ -21,10 +21,14 @@ p{
 }
 
 .button3 {
-  position: relative;
+  position: fixed;
+    z-index: 1000;
+  bottom: 5px;
+  right: 5px;
+    border-radius: 10px;
   color: white;
-  font-size: 150%;    
-  background: linear-gradient(to right, #8041F2, #3095ED);
+  font-size: 150%;
+  background: #2d3436;
   padding: 10px 20px 10px 20px;    
   transition: .2s ease-in-out;    
 }
@@ -154,7 +158,6 @@ p{
 
 .pricing-area{
    position: relative;
-   background-color: rebeccapurple;
    padding-bottom: 100px;    
 }
 
