@@ -26,10 +26,10 @@ p{
 
 .button3 {
   position: fixed;
-    z-index: 1000;
+  z-index: 1000;
   bottom: 5px;
   right: 5px;
-    border-radius: 10px;
+  border-radius: 10px;
   color: white;
   font-size: 150%;
   background: #2d3436;
@@ -38,8 +38,8 @@ p{
 }
 
 .button3:hover {
-  background-color: black;
-    color: white;
+  background-color: white;
+    color: black;
 }
 
 
