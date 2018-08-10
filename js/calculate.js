@@ -324,11 +324,11 @@
                     indexLabel: "{label} {y}",
                     indexLabelFontColor: "white",
                     dataPoints: [
-                        {y: pLamba, label: "Lambda"},
-                        {y: pAzure, label: "Azure"},
-                        {y: pGoogle, label: "G Cloud"},
-                        {y: pIbm, label: "IBM"},
-                        {y: pOrb, label: "Orb"}
+                        {y: pLamba*100, label: "Lambda"},
+                        {y: pAzure*100, label: "Azure"},
+                        {y: pGoogle*100, label: "G Cloud"},
+                        {y: pIbm*100, label: "IBM"},
+                        {y: pOrb*100, label: "Orb"}
                     ]
                 }]
         });
