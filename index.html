@@ -24,6 +24,8 @@
     <title>The ORB | Distributed Function As Service</title>
   </head>
   <body id="body">
+      
+      <div id="preloader"></div>
     
         <!-- Start Header Area -->
 			<header class="default-header">
@@ -436,7 +438,9 @@ Orb is the first ever Decentralized Function as a service provider. Orb will let
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>      
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>  
+      <script  src="http://code.jquery.com/jquery-3.1.1.js"  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+
     <script src="js/backstretch.js" type="text/javascript"></script>      
     <script src="js/jquery.sticky.js"></script>      
     <script src="js/smooth-scroll.js"></script>      
@@ -454,6 +458,11 @@ Orb is the first ever Decentralized Function as a service provider. Orb will let
     <script src="js/calculate.js"></script>    
     <script type="text/javascript">
     
+            $(window).on('load',function(){
+                    var pre_loader = $('#preloader')
+                    pre_loader.fadeOut('slow');
+                });
+        
         $("#body").backstretch("images/bg2.jpg");
         $("#contact").backstretch("images/contact-back.jpg");
         
